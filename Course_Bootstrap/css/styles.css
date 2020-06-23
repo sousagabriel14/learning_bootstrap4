@@ -425,3 +425,86 @@ header, .navbar {
     text-decoration: none;
     color: #3ec1d5;
 }
+
+/*  RESPONSIVE */
+
+/* Sintaxe especial para setar um tamanho maximo ou minimo de tela no dispositivo, e alterar as estilizações baseadas neste tamanho */
+@media(max-width: 768px) {
+
+    /* geral */
+    .container {
+        padding: 20px 0;
+    }
+
+    /* slider */
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+        height: auto;
+    }
+
+    #mainSlider .carousel-caption h2 {
+        font-size: 28px;
+    }
+
+    #mainSlider .carousel-caption p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    /* objeto posicionado de forma absoluta, left e right aumenta o espaçamento mas mantém no centro */
+    .carousel-caption {
+        left: 10%;
+        right: 10%;
+    }
+
+    /*  about  */
+    #about-area img {
+        margin-top: 100px;
+    }
+
+    /*  data  */
+    .circle-box div {
+        padding: 0 10px;
+    }
+
+    #data-area p {
+        font-size: 15px;
+    }
+
+    /*  team  */
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    /*  apply  */
+    #apply-area .apply-box {
+        padding: 50px 25px;
+    }
+
+    /*  news  */
+    #news-area p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #email-input{
+        width: 50%;
+    }
+
+    #call-area {
+        margin-top: 30px;
+    }
+
+    #call-area .container {
+        padding: 30px;
+    }
+
+    #call-area p, #call-area #call-btn {
+        font-size: 16px;
+    }
+
+}
