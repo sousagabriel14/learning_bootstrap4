@@ -303,8 +303,8 @@ header, .navbar {
     color: white;
     height: 40px;
     padding: 0 30px;
-    margin-left: -130;
-    position: absolute;
+    margin-left: -5px;
+    
     transition: .5s;
 }
 
@@ -428,6 +428,7 @@ header, .navbar {
 
 /*  RESPONSIVE */
 
+/* tablets */
 /* Sintaxe especial para setar um tamanho maximo ou minimo de tela no dispositivo, e alterar as estilizações baseadas neste tamanho */
 @media(max-width: 768px) {
 
@@ -505,6 +506,99 @@ header, .navbar {
 
     #call-area p, #call-area #call-btn {
         font-size: 16px;
+    }
+
+    /*  MOBILE  */
+    @media(max-width: 425px) {
+
+        /* slider */
+        #mainSlider {
+            margin-top: 90px;
+        }
+
+        #mainsSlider .carousel-caption {
+            top: 5%;
+        }
+
+        #mainSlider .carousel-caption h2{
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        #mainSlider .carousel-caption p{
+           display: none; /*Desabilitando/ocultando paragrafo*/
+        }
+
+        .carousel-caption .main-btn {
+            font-size: 14px;
+        }
+
+        /* Sobre */
+        .main-title {
+            font-size: 30px;
+        }
+
+        #about-area img{
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        /* data */
+        .circle-box {
+            width: 50%;
+        }
+
+        /* team */
+        #team-area .col-md-3 {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+
+        /* apply */
+        #apply-area {
+            height: auto;
+        }
+
+        #company-img {
+            display: none; /*Desabilitando/ocultando a imagem*/
+        }
+
+        /* filter */
+        #portifolio-area .filter-btn {
+            margin-bottom: 20px;
+        }
+
+        .project-box {
+            width: 50%;
+        }
+
+        /* news */
+        #news-area .main-title {
+            font-size: 24px;
+        }
+
+        #news-area p {
+            font-size: 16px;
+        }
+
+        #email-input {
+            width: 50%;
+        }
+
+        /* call to action */
+        #call-area p, #call-area #call-btn {
+            font-size: 12px;
+            letter-spacing: 0;
+            margin: 0;
+            width: 50%;
+        }
+
+        /* contact */
+        .contact-box {
+            border: none;
+            margin-bottom: 0;
+        }
+           
     }
 
 }
